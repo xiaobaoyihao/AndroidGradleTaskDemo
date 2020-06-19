@@ -24,61 +24,22 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }
 
-// 打印task的输入和输出
-def printTaskInputsOutputs(String taskName) {
-    def realTask = project.tasks.findByName(taskName)
+//打印task的输入和输出
+gradle.taskGraph.afterTask { task ->
+    try {
+        println("========================START==============================")
+        println "taskName:${task.name}"
 
-    if (realTask) {
-        println 'find ' + taskName + ' task -----------------------'
-
-        realTask.doLast {
-            realTask.inputs.files.each { fileTemp ->
-                println 'input file:' + fileTemp.absolutePath
-            }
-
-            println '---------------------------------------------------'
-            realTask.outputs.files.each { fileTemp ->
-                println 'output file:' + fileTemp.absolutePath
-            }
+        task.inputs.files.each { fileTemp ->
+            println 'input file:' + fileTemp.absolutePath
         }
-    }
-}
 
-project.afterEvaluate {
-    def tasks = ['preDebugBuild',
-                 'compileDebugAidl',
-                 'compileDebugRenderscript',
-                 'checkDebugManifest',
-                 'generateDebugBuildConfig',
-                 'prepareLintJar',
-                 'generateDebugResValues',
-                 'generateDebugResources',
-                 'mergeDebugResources',
-                 'createDebugCompatibleScreenManifests',
-                 'processDebugManifest',
-                 'splitsDiscoveryTaskDebug',
-                 'processDebugResources',
-                 'generateDebugSources',
-                 'javaPreCompileDebug',
-                 'compileDebugJavaWithJavac',
-                 'compileDebugNdk',
-                 'compileDebugSources',
-                 'mergeDebugShaders',
-                 'compileDebugShaders',
-                 'generateDebugAssets',
-                 'mergeDebugAssets',
-                 'transformClassesWithDexBuilderForDebug',
-                 'transformDexArchiveWithExternalLibsDexMergerForDebug',
-                 'transformDexArchiveWithDexMergerForDebug',
-                 'mergeDebugJniLibFolders',
-                 'transformNativeLibsWithMergeJniLibsForDebug',
-                 'processDebugJavaRes',
-                 'transformResourcesWithMergeJavaResForDebug',
-                 'validateSigningDebug',
-                 'packageDebug',
-                 'assembleDebug'
-    ]
-    for (String taskName : tasks) {
-        printTaskInputsOutputs(taskName)
+        println '========================================================='
+        task.outputs.files.each { fileTemp ->
+            println 'output file:' + fileTemp.absolutePath
+        }
+        println("========================END==============================")
+    } catch (Exception e) {
+
     }
 }
