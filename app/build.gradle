@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
+    buildToolsVersion "28.0.2"
     defaultConfig {
         applicationId "org.test.task"
         minSdkVersion 14
@@ -25,21 +26,21 @@ dependencies {
 }
 
 //打印task的输入和输出
-gradle.taskGraph.afterTask { task ->
-    try {
-        println("========================START==============================")
-        println "taskName:${task.name}"
-
-        task.inputs.files.each { fileTemp ->
-            println 'input file:' + fileTemp.absolutePath
-        }
-
-        println '========================================================='
-        task.outputs.files.each { fileTemp ->
-            println 'output file:' + fileTemp.absolutePath
-        }
-        println("========================END==============================")
-    } catch (Exception e) {
-
-    }
-}
+//gradle.taskGraph.afterTask { task ->
+//    try {
+//        println("========================START==============================")
+//        println "taskName:${task.name}"
+//
+//        task.inputs.files.each { fileTemp ->
+//            println 'input:' + fileTemp.absolutePath
+//        }
+//
+//        println '========================================================='
+//        task.outputs.files.each { fileTemp ->
+//            println 'output:' + fileTemp.absolutePath
+//        }
+//        println("========================END==============================")
+//    } catch (Exception e) {
+//
+//    }
+//}
