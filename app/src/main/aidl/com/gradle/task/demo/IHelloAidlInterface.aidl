@@ -1,9 +1,9 @@
-// IMyAidlInterface.aidl
-package org.test.task;
+// IHelloAidlInterface.aidl
+package com.gradle.task.demo;
 
 // Declare any non-default types here with import statements
 
-interface IMyAidlInterface {
+interface IHelloAidlInterface {
     /**
      * Demonstrates some basic types that you can use as parameters
      * and return values in AIDL.

@@ -1,12 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "28.0.2"
+    compileSdkVersion gradle.ext.compileSdkVersion
+    buildToolsVersion gradle.ext.buildToolsVersion
+
     defaultConfig {
-        applicationId "org.test.task"
-        minSdkVersion 14
-        targetSdkVersion 26
+        applicationId "com.gradle.task.demo"
+        minSdkVersion gradle.ext.minSdkVersion
+        targetSdkVersion gradle.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -31,16 +32,16 @@ dependencies {
 //        println("========================START==============================")
 //        println "taskName:${task.name}"
 //
-//        task.inputs.files.each { fileTemp ->
-//            println 'input:' + fileTemp.absolutePath
+//        task.inputs.files.each { file ->
+//            println 'input:' + file.absolutePath
 //        }
 //
 //        println '========================================================='
-//        task.outputs.files.each { fileTemp ->
-//            println 'output:' + fileTemp.absolutePath
+//        task.outputs.files.each { file ->
+//            println 'output:' + file.absolutePath
 //        }
 //        println("========================END==============================")
 //    } catch (Exception e) {
-//
+//        e.printStackTrace()
 //    }
 //}
