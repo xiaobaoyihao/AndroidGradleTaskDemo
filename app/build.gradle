@@ -33,21 +33,21 @@ dependencies {
 }
 
 //打印task的输入和输出
-//gradle.taskGraph.afterTask { task ->
-//    try {
-//        println("========================START==============================")
-//        println "taskName:${task.name}"
-//
-//        task.inputs.files.each { file ->
-//            println 'input:' + file.absolutePath
-//        }
-//
-//        println '========================================================='
-//        task.outputs.files.each { file ->
-//            println 'output:' + file.absolutePath
-//        }
-//        println("========================END==============================")
-//    } catch (Exception e) {
-//        e.printStackTrace()
-//    }
-//}
+gradle.taskGraph.afterTask { task ->
+    try {
+        println("========================START==============================")
+        println "taskName:${task.name}"
+
+        task.inputs.files.each { file ->
+            println 'input:' + file.absolutePath
+        }
+
+        println '========================================================='
+        task.outputs.files.each { file ->
+            println 'output:' + file.absolutePath
+        }
+        println("========================END==============================")
+    } catch (Exception e) {
+        e.printStackTrace()
+    }
+}
