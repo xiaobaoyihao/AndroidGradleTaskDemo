@@ -7,4 +7,5 @@ gradle.ext {
 }
 
 //include ':module-a'
-include ':app', ':buildsrc'
+include ':app'
+include ':buildsrc'
