@@ -17,6 +17,12 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
+        debug {
+            resValue("string","string_key","hello android")
+            resValue("bool","bool_is_boy","true")
+            resValue("integer","integer_age","12")
+        }
     }
 }
 
