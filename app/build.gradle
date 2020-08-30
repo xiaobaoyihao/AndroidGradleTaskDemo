@@ -35,6 +35,19 @@ android {
             applicationIdSuffix ".debugStaging"
         }
     }
+
+//    splits {
+//        density {
+//            enable true
+//            exclude "ldpi", "xhdpi", "xxxhdpi","mdpi"
+//        }
+//
+//        abi {
+//            enable true
+//            include "x86"
+//            exclude "x86_64","arm64-v8a"
+//        }
+//    }
 }
 
 dependencies {
