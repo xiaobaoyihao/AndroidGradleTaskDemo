@@ -11,6 +11,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [host_name:"www.defaultConfig.com"]
     }
     buildTypes {
         release {
@@ -22,6 +23,16 @@ android {
             resValue("string","string_key","hello android")
             resValue("bool","bool_is_boy","true")
             resValue("integer","integer_age","12")
+
+            applicationIdSuffix ".debug"
+            debuggable true
+            manifestPlaceholders = [host_name:"www.debug.com"]
+        }
+
+        staging {
+            initWith debug
+            manifestPlaceholders = [host_name:"www.staging.com"]
+            applicationIdSuffix ".debugStaging"
         }
     }
 }
