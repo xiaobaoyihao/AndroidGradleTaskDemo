@@ -17,6 +17,6 @@
             </intent-filter>
         </activity>
 
-
+        <meta-data android:name="host_name" android:value="${host_name}"/>
     </application>
 </manifest>
