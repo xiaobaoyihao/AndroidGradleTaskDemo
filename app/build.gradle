@@ -48,6 +48,10 @@ android {
 //            exclude "x86_64","arm64-v8a"
 //        }
 //    }
+
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
