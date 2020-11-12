@@ -12,6 +12,9 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         manifestPlaceholders = [host_name:"www.defaultConfig.com"]
+
+        multiDexEnabled true
+        multiDexKeepFile file('maindexlist.txt')
     }
     buildTypes {
         release {
@@ -25,7 +28,6 @@ android {
             resValue("integer","integer_age","12")
 
             applicationIdSuffix ".debug"
-            debuggable true
             manifestPlaceholders = [host_name:"www.debug.com"]
         }
 
