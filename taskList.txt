@@ -16,42 +16,52 @@ NDK is missing a "platforms" directory.
 If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/apple/Library/Android/sdk/ndk.
 If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
 
-:app:checkDebugClasspath UP-TO-DATE
+Observed package id 'ndk;21.3.6528147' in inconsistent location '/Users/apple/Library/Android/sdk/ndk_bak/21.3.6528147' (Expected '/Users/apple/Library/Android/sdk/ndk/21.3.6528147')
+:clean
+:app:clean
+:buildsrc:clean
+:clean UP-TO-DATE
+:app:checkDebugClasspath FROM-CACHE
 :app:preBuild UP-TO-DATE
-:app:preDebugBuild UP-TO-DATE
-:app:compileDebugAidl UP-TO-DATE
-:app:compileDebugRenderscript UP-TO-DATE
-:app:checkDebugManifest UP-TO-DATE
-:app:generateDebugBuildConfig UP-TO-DATE
+:app:preDebugBuild FROM-CACHE
+:app:compileDebugAidl FROM-CACHE
+:app:compileDebugRenderscript FROM-CACHE
+:app:checkDebugManifest
+:app:generateDebugBuildConfig FROM-CACHE
 :app:prepareLintJar UP-TO-DATE
-:app:mainApkListPersistenceDebug UP-TO-DATE
-:app:generateDebugResValues UP-TO-DATE
+:app:mainApkListPersistenceDebug
+:app:generateDebugResValues FROM-CACHE
 :app:generateDebugResources UP-TO-DATE
-:app:mergeDebugResources UP-TO-DATE
-:app:createDebugCompatibleScreenManifests UP-TO-DATE
-:app:processDebugManifest UP-TO-DATE
-:app:splitsDiscoveryTaskDebug UP-TO-DATE
-:app:processDebugResources UP-TO-DATE
+:app:mergeDebugResources FROM-CACHE
+:app:createDebugCompatibleScreenManifests FROM-CACHE
+:app:processDebugManifest FROM-CACHE
+:app:splitsDiscoveryTaskDebug FROM-CACHE
+:app:processDebugResources FROM-CACHE
 :app:generateDebugSources UP-TO-DATE
-:app:javaPreCompileDebug UP-TO-DATE
-:app:compileDebugJavaWithJavac UP-TO-DATE
+:app:dataBindingExportBuildInfoDebug
+:app:dataBindingExportFeaturePackageIdsDebug FROM-CACHE
+:app:dataBindingMergeDependencyArtifactsDebug FROM-CACHE
+:app:transformDataBindingBaseClassLogWithDataBindingMergeGenClassesForDebug
+:app:dataBindingGenBaseClassesDebug
+:app:javaPreCompileDebug FROM-CACHE
+:app:compileDebugJavaWithJavac FROM-CACHE
 :app:compileDebugNdk NO-SOURCE
 :app:compileDebugSources UP-TO-DATE
-:app:mergeDebugShaders UP-TO-DATE
-:app:compileDebugShaders UP-TO-DATE
+:app:mergeDebugShaders FROM-CACHE
+:app:compileDebugShaders FROM-CACHE
 :app:generateDebugAssets UP-TO-DATE
-:app:mergeDebugAssets UP-TO-DATE
-:app:transformClassesWithDexBuilderForDebug UP-TO-DATE
-:app:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
-:app:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
-:app:mergeDebugJniLibFolders UP-TO-DATE
-:app:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
-:app:checkDebugLibraries UP-TO-DATE
-:app:processDebugJavaRes NO-SOURCE
-:app:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
-:app:validateSigningDebug UP-TO-DATE
-:app:packageDebug UP-TO-DATE
-:app:assembleDebug UP-TO-DATE
+:app:mergeDebugAssets FROM-CACHE
+:app:transformClassesWithDexBuilderForDebug
+:app:transformClassesWithMultidexlistForDebug FROM-CACHE
+:app:transformDexArchiveWithDexMergerForDebug
+:app:mergeDebugJniLibFolders FROM-CACHE
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:checkDebugLibraries FROM-CACHE
+:app:processDebugJavaRes
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
 
-BUILD SUCCESSFUL in 4s
-28 actionable tasks: 28 up-to-date
+BUILD SUCCESSFUL in 7s
+37 actionable tasks: 14 executed, 21 from cache, 2 up-to-date
