@@ -8,4 +8,4 @@ gradle.ext {
 
 //include ':module-a'
 include ':app'
-include ':buildsrc'
+include ':buildSrc'
