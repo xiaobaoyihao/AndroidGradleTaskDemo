@@ -1,9 +1,9 @@
 gradle.ext {
-    compileSdkVersion = 26
-    buildToolsVersion = "28.0.2"
+    compileSdkVersion = 29
+    buildToolsVersion = "29.0.2"
     minSdkVersion = 14
-    targetSdkVersion = 26
-    gradleVersion = "com.android.tools.build:gradle:3.2.0"
+    targetSdkVersion = 29
+    gradleVersion = "com.android.tools.build:gradle:4.1.0"
 }
 
 //include ':module-a'
