@@ -1,67 +1,648 @@
-Parallel execution with configuration on demand is an incubating feature.
-:buildsrc:compileJava NO-SOURCE
-:buildsrc:compileGroovy NO-SOURCE
-:buildsrc:processResources NO-SOURCE
-:buildsrc:classes UP-TO-DATE
-:buildsrc:jar
-:buildsrc:assemble
-:buildsrc:compileTestJava NO-SOURCE
-:buildsrc:compileTestGroovy NO-SOURCE
-:buildsrc:processTestResources NO-SOURCE
-:buildsrc:testClasses UP-TO-DATE
-:buildsrc:test NO-SOURCE
-:buildsrc:check UP-TO-DATE
-:buildsrc:build
-NDK is missing a "platforms" directory.
-If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/apple/Library/Android/sdk/ndk.
-If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+> Task :buildSrc:compileJava NO-SOURCE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:processResources NO-SOURCE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+> Task :buildSrc:assemble UP-TO-DATE
+> Task :buildSrc:compileTestJava NO-SOURCE
+> Task :buildSrc:compileTestGroovy NO-SOURCE
+> Task :buildSrc:processTestResources NO-SOURCE
+> Task :buildSrc:testClasses UP-TO-DATE
+> Task :buildSrc:test NO-SOURCE
+> Task :buildSrc:check UP-TO-DATE
+> Task :buildSrc:build UP-TO-DATE
 
-Observed package id 'ndk;21.3.6528147' in inconsistent location '/Users/apple/Library/Android/sdk/ndk_bak/21.3.6528147' (Expected '/Users/apple/Library/Android/sdk/ndk/21.3.6528147')
-:clean
-:app:clean
-:buildsrc:clean
-:clean UP-TO-DATE
-:app:checkDebugClasspath FROM-CACHE
-:app:preBuild UP-TO-DATE
-:app:preDebugBuild FROM-CACHE
-:app:compileDebugAidl FROM-CACHE
-:app:compileDebugRenderscript FROM-CACHE
-:app:checkDebugManifest
-:app:generateDebugBuildConfig FROM-CACHE
-:app:prepareLintJar UP-TO-DATE
-:app:mainApkListPersistenceDebug
-:app:generateDebugResValues FROM-CACHE
-:app:generateDebugResources UP-TO-DATE
-:app:mergeDebugResources FROM-CACHE
-:app:createDebugCompatibleScreenManifests FROM-CACHE
-:app:processDebugManifest FROM-CACHE
-:app:splitsDiscoveryTaskDebug FROM-CACHE
-:app:processDebugResources FROM-CACHE
-:app:generateDebugSources UP-TO-DATE
-:app:dataBindingExportBuildInfoDebug
-:app:dataBindingExportFeaturePackageIdsDebug FROM-CACHE
-:app:dataBindingMergeDependencyArtifactsDebug FROM-CACHE
-:app:transformDataBindingBaseClassLogWithDataBindingMergeGenClassesForDebug
-:app:dataBindingGenBaseClassesDebug
-:app:javaPreCompileDebug FROM-CACHE
-:app:compileDebugJavaWithJavac FROM-CACHE
-:app:compileDebugNdk NO-SOURCE
-:app:compileDebugSources UP-TO-DATE
-:app:mergeDebugShaders FROM-CACHE
-:app:compileDebugShaders FROM-CACHE
-:app:generateDebugAssets UP-TO-DATE
-:app:mergeDebugAssets FROM-CACHE
-:app:transformClassesWithDexBuilderForDebug
-:app:transformClassesWithMultidexlistForDebug FROM-CACHE
-:app:transformDexArchiveWithDexMergerForDebug
-:app:mergeDebugJniLibFolders FROM-CACHE
-:app:transformNativeLibsWithMergeJniLibsForDebug
-:app:checkDebugLibraries FROM-CACHE
-:app:processDebugJavaRes
-:app:transformResourcesWithMergeJavaResForDebug
-:app:validateSigningDebug
-:app:packageDebug
-:app:assembleDebug
+> Configure project :app
+WARNING: DSL element 'android.dataBinding.enabled' is obsolete and has been replaced with 'android.buildFeatures.dataBinding'.
+It will be removed in version 5.0 of the Android Gradle plugin.
 
-BUILD SUCCESSFUL in 7s
-37 actionable tasks: 14 executed, 21 from cache, 2 up-to-date
+> Task :clean UP-TO-DATE
+========================START==============================
+taskName:clean
+=========================================================
+========================END==============================
+
+> Task :app:clean
+========================START==============================
+taskName:clean
+=========================================================
+========================END==============================
+
+> Task :app:preBuild UP-TO-DATE
+========================START==============================
+taskName:preBuild
+=========================================================
+========================END==============================
+
+> Task :app:preDebugBuild UP-TO-DATE
+========================START==============================
+taskName:preDebugBuild
+=========================================================
+========================END==============================
+
+> Task :app:compileDebugAidl
+========================START==============================
+taskName:compileDebugAidl
+input:/Users/dingbaosheng/Library/Android/sdk/platforms/android-29/framework.aidl
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/97a94fe9e4eec4c55ac021b706f86504/support-media-compat-26.1.0/aidl
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/4edea205850a183aaf0a48694571249f/support-compat-26.1.0/aidl
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/src/main/aidl/com/gradle/task/demo/IHelloAidlInterface.aidl
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/generated/aidl_source_output_dir/debug/out
+========================END==============================
+
+> Task :app:compileDebugRenderscript NO-SOURCE
+========================START==============================
+taskName:compileDebugRenderscript
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/renderscript_lib/debug/lib
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/rs/debug/obj
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/generated/res/rs/debug
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/generated/renderscript_source_output_dir/debug/out
+========================END==============================
+
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+========================START==============================
+taskName:dataBindingMergeDependencyArtifactsDebug
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/98e3253de348d08123bed0ff074a2239/adapters-4.1.0/data-binding
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/data_binding_dependency_artifacts/debug
+========================END==============================
+
+> Task :app:dataBindingMergeGenClassesDebug
+========================START==============================
+taskName:dataBindingMergeGenClassesDebug
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/98e3253de348d08123bed0ff074a2239/adapters-4.1.0/data-binding-base-class-log
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/data_binding_base_class_logs_dependency_artifacts/debug
+========================END==============================
+
+> Task :app:generateDebugResValues
+========================START==============================
+taskName:generateDebugResValues
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/generated/res/resValues/debug
+========================END==============================
+
+> Task :app:generateDebugResources
+========================START==============================
+taskName:generateDebugResources
+=========================================================
+========================END==============================
+
+> Task :app:dataBindingTriggerDebug
+========================START==============================
+taskName:dataBindingTriggerDebug
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/generated/data_binding_trigger/debug
+========================END==============================
+
+> Task :app:generateDebugBuildConfig
+========================START==============================
+taskName:generateDebugBuildConfig
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/generated/source/buildConfig/debug
+========================END==============================
+
+> Task :app:javaPreCompileDebug
+========================START==============================
+taskName:javaPreCompileDebug
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-compiler/4.1.0/e3e4da8a3af1daddf2af919dd48598371973cbe2/databinding-compiler-4.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-compiler-common/4.1.0/ce7160dc1ad2cb4144d24da6b81a4bc97ec5c78b/databinding-compiler-common-4.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/4.1.0/e0c4fa410ea245a70a9dbd140a164d50b10e55fe/databinding-common-4.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.3.72/916d54b9eb6442b615e6f1488978f551c0674720/kotlin-stdlib-jdk8-1.3.72.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.google.auto/auto-common/0.10/c8f153ebe04a17183480ab4016098055fb474364/auto-common-0.10.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4/4.5.3/f35db7e4b2446e4174ba6a73db7bd6b3e6bb5da1/antlr4-4.5.3.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.googlecode.juniversalchardet/juniversalchardet/1.0.3/cd49678784c46aa8789c060538e0154013bb421b/juniversalchardet-1.0.3.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/4.1.0/2697e7689bbde7051db61cb6baeaf307975090db/baseLibrary-4.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/28.1-jre/b0e91dcb6a44ffb6221b5027e12a5cb34b841145/guava-28.1-jre.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.squareup/javapoet/1.10.0/712c178d35185d8261295913c9f2a7d6867a6007/javapoet-1.10.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.tools.build.jetifier/jetifier-core/1.0.0-beta09/c98ee0e5579aed97e17f605a89b101115a2f5a61/jetifier-core-1.0.0-beta09.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.5/f645ed69d595b24d4cf8b3fbb64cc505bede8829/gson-2.8.5.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.1/dd6dda9da676a54c5b36ca2806ff95ee017d8738/jaxb-runtime-2.3.1.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/27.1.0/c5e76d6e7078808655107373703dda7c58fec517/annotations-27.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.72/3adfc2f4ea4243e01204be8081fe63bde6b12815/kotlin-stdlib-jdk7-1.3.72.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.72/8032138f12c0180bc4e51fe139d4c52b46db6109/kotlin-stdlib-1.3.72.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/2.8.1/eb2e8ab75598548cc8acf9a1ca227e480e01881e/checker-qual-2.8.1.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.3.2/d1a0c5032570e0f64be6b4d9c90cdeb103129029/error_prone_annotations-2.3.2.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.3/ba035118bc8bac37d7eff77700720999acd9986d/j2objc-annotations-1.3.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.18/f7aa683ea79dc6681ee9fb95756c999acbb62f5d/animal-sniffer-annotations-1.18.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.3.1/8531ad5ac454cc2deb9d4d32c40c4d7451939b5d/jaxb-api-2.3.1.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.3.1/a09d2c48d3285f206fafbffe0e50619284e92126/txw2-2.3.1.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/3.0.7/c197c86ceec7318b1284bffb49b54226ca774003/istack-commons-runtime-3.0.7.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.jvnet.staxex/stax-ex/1.8/8cc35f73da321c29973191f2cf143d29d26a1df7/stax-ex-1.8.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.sun.xml.fastinfoset/FastInfoset/1.2.15/bb7b7ec0379982b97c62cd17465cb6d9155f68e8/FastInfoset-1.2.15.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/javax.activation/javax.activation-api/1.2.0/85262acf3ca9816f9537ca47d5adeabaead7cb16/javax.activation-api-1.2.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.72/6ca8bee3d88957eaaaef077c41c908c9940492d8/kotlin-stdlib-common-1.3.72.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/annotation_processor_list/debug/annotationProcessors.json
+========================END==============================
+
+> Task :app:checkDebugAarMetadata
+========================START==============================
+taskName:checkDebugAarMetadata
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/98e3253de348d08123bed0ff074a2239/adapters-4.1.0/META-INF/com/android/build/gradle/aar-metadata.properties
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/9003ebe2e185458af8ba680fbf2862a6/library-4.1.0/META-INF/com/android/build/gradle/aar-metadata.properties
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/0ba68018452eb558aea6db221bd76b74/viewbinding-4.1.0/META-INF/com/android/build/gradle/aar-metadata.properties
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/aar_metadata_check/debug
+========================END==============================
+
+> Task :app:createDebugCompatibleScreenManifests
+========================START==============================
+taskName:createDebugCompatibleScreenManifests
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/compatible_screen_manifest/debug
+========================END==============================
+
+> Task :app:extractDeepLinksDebug
+========================START==============================
+taskName:extractDeepLinksDebug
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/src/debug/res/navigation
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/src/main/res/navigation
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/navigation_json/debug/navigation.json
+========================END==============================
+
+> Task :app:mergeDebugResources
+========================START==============================
+taskName:mergeDebugResources
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/generated/res/resValues/debug
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/98e3253de348d08123bed0ff074a2239/adapters-4.1.0/res
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/9003ebe2e185458af8ba680fbf2862a6/library-4.1.0/res
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/0687e09995e12f3da0cda49c9283bcd8/appcompat-v7-26.1.0/res
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/5be6d260096f3bcffc16fcde0ceec99a/constraint-layout-1.1.3/res
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/97a94fe9e4eec4c55ac021b706f86504/support-media-compat-26.1.0/res
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/4edea205850a183aaf0a48694571249f/support-compat-26.1.0/res
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/generated/res/rs/debug
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/src/main/res
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/src/debug/res
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/merged_res_blame_folder/debug/out
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/data_binding_layout_info_type_merge/debug/out
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/generated/res/pngs/debug
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/incremental/mergeDebugResources
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/res/merged/debug
+========================END==============================
+
+> Task :app:processDebugMainManifest
+========================START==============================
+taskName:processDebugMainManifest
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/src/main/AndroidManifest.xml
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/98e3253de348d08123bed0ff074a2239/adapters-4.1.0/AndroidManifest.xml
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/9003ebe2e185458af8ba680fbf2862a6/library-4.1.0/AndroidManifest.xml
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/293534efc17d104cfb6d889c36c76d43/multidex-1.0.2/AndroidManifest.xml
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/0687e09995e12f3da0cda49c9283bcd8/appcompat-v7-26.1.0/AndroidManifest.xml
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/5be6d260096f3bcffc16fcde0ceec99a/constraint-layout-1.1.3/AndroidManifest.xml
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/0ba68018452eb558aea6db221bd76b74/viewbinding-4.1.0/AndroidManifest.xml
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/3b0dbbe22c1a11d6e48ea3ea67f5a3b9/support-v4-26.1.0/AndroidManifest.xml
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/84bf0dc2e7bf9f6b842d90ea1fe4e31a/support-fragment-26.1.0/AndroidManifest.xml
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/3ca12a1ccfae5a70c2c97e35d5928f9a/support-core-utils-26.1.0/AndroidManifest.xml
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/84de9443c17ff2b1e5bf82cc19bdbb11/animated-vector-drawable-26.1.0/AndroidManifest.xml
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/2ebdfde0cf3db7931cec75154c8541b8/support-vector-drawable-26.1.0/AndroidManifest.xml
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/97a94fe9e4eec4c55ac021b706f86504/support-media-compat-26.1.0/AndroidManifest.xml
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/2e736ae05624257ccd12679058194115/support-core-ui-26.1.0/AndroidManifest.xml
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/4edea205850a183aaf0a48694571249f/support-compat-26.1.0/AndroidManifest.xml
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/35a6b1b8ce4c8bd21efd0223ea63db2e/runtime-1.0.3/AndroidManifest.xml
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/navigation_json/debug/navigation.json
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/merged_manifest/debug/out/AndroidManifest.xml
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/outputs/logs/manifest-merger-debug-report.txt
+========================END==============================
+
+> Task :app:dataBindingGenBaseClassesDebug
+========================START==============================
+taskName:dataBindingGenBaseClassesDebug
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/data_binding_layout_info_type_merge/debug/out
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/data_binding_base_class_logs_dependency_artifacts/debug
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/data_binding_dependency_artifacts/debug
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/data_binding_base_class_log_artifact/debug/out
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/incremental/dataBindingGenBaseClassesDebug
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/generated/data_binding_base_class_source_out/debug/out
+========================END==============================
+
+> Task :app:processDebugManifest
+========================START==============================
+taskName:processDebugManifest
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/compatible_screen_manifest/debug
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/merged_manifest/debug/out/AndroidManifest.xml
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/merged_manifests/debug
+========================END==============================
+
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+========================START==============================
+taskName:mergeDebugNativeDebugMetadata
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/outputs/native-debug-symbols/debug/native-debug-symbols.zip
+========================END==============================
+
+> Task :app:mergeDebugShaders
+========================START==============================
+taskName:mergeDebugShaders
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/src/main/shaders
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/src/debug/shaders
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/incremental/mergeDebugShaders
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/merged_shaders/debug/out
+========================END==============================
+
+> Task :app:compileDebugShaders NO-SOURCE
+========================START==============================
+taskName:compileDebugShaders
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/merged_shaders/debug/out
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/shader_assets/debug/out
+========================END==============================
+
+> Task :app:generateDebugAssets UP-TO-DATE
+========================START==============================
+taskName:generateDebugAssets
+=========================================================
+========================END==============================
+
+> Task :app:mergeDebugAssets
+========================START==============================
+taskName:mergeDebugAssets
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/shader_assets/debug/out
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/src/main/assets
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/src/debug/assets
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/incremental/mergeDebugAssets
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/merged_assets/debug/out
+========================END==============================
+
+> Task :app:compressDebugAssets
+========================START==============================
+taskName:compressDebugAssets
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/merged_assets/debug/out
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/compressed_assets/debug/out
+========================END==============================
+
+> Task :app:processDebugJavaRes
+========================START==============================
+taskName:processDebugJavaRes
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/src/main/resources/main-resources.txt
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/src/debug/resources/debug-resources.txt
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/java_res/debug/out
+========================END==============================
+
+> Task :app:mergeDebugJniLibFolders
+========================START==============================
+taskName:mergeDebugJniLibFolders
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/src/main/jniLibs
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/src/debug/jniLibs
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/incremental/mergeDebugJniLibFolders
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/merged_jni_libs/debug/out
+========================END==============================
+
+> Task :app:checkDebugDuplicateClasses
+========================START==============================
+taskName:checkDebugDuplicateClasses
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/4c0e28465fbe66f305c7b23ce70e0c1f/java-json
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/39c6c0107b6fd9cff54e9407c24e1fa7/adapters-4.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/439cc485809f38907bfe73cb549cb797/library-4.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/033c2d20331569b8706ca027d57effdb/baseLibrary-4.1.0
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/fc1ed0037938c59758e3f3cb4873aa00/multidex-1.0.2-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/0de786a57c999eef08624887315bb88a/appcompat-v7-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/daf15a4dedd79c0ed30682f7f772b916/constraint-layout-1.1.3-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/997d090dfdc3e43b7857d2f031515847/viewbinding-4.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/f871ca0dda260ce77e219c78fe24b0a4/support-v4-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/aefd1c2632e7b04feececba56c9faba0/support-fragment-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/2ddca1dd0ca830a85b396db1f477d432/support-core-utils-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/68ff9633692d0db06e39fe19cf824e32/animated-vector-drawable-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/5a1543f7198c6c6b53b7585e592834e0/support-vector-drawable-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/03b37e278a6ef316dbd3327eaea0c8d5/support-media-compat-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/9645f0c5fac6e0a157bfc1418183b08f/support-core-ui-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/71baf892858a2f5150bc3e7e36faf242/support-compat-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/15aa614a7d7f4d38649859102aecda96/runtime-1.0.3-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/1ac922fc6dc84ff27768888f6cabdf4d/common-1.0.3
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/d1fc2fa71b72ae19ad62c22d48946646/common-1.0.0
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/52d6c6fdfe4b71f7df5c0e7a85a84a72/support-annotations-26.1.0
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/dbcc1c8da851f3149bf664f4a68ef6b6/constraint-layout-solver-1.1.3
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/duplicate_classes_check/debug
+========================END==============================
+
+> Task :app:validateSigningDebug
+========================START==============================
+taskName:validateSigningDebug
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/validate_signing_config/debug
+========================END==============================
+
+> Task :app:processDebugManifestForPackage
+========================START==============================
+taskName:processDebugManifestForPackage
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/merged_manifests/debug
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/packaged_manifests/debug
+========================END==============================
+
+> Task :app:mergeDebugNativeLibs
+========================START==============================
+taskName:mergeDebugNativeLibs
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/libs/java-json.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/98e3253de348d08123bed0ff074a2239/adapters-4.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/9003ebe2e185458af8ba680fbf2862a6/library-4.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/4.1.0/2697e7689bbde7051db61cb6baeaf307975090db/baseLibrary-4.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/293534efc17d104cfb6d889c36c76d43/multidex-1.0.2/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/0687e09995e12f3da0cda49c9283bcd8/appcompat-v7-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/5be6d260096f3bcffc16fcde0ceec99a/constraint-layout-1.1.3/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/0ba68018452eb558aea6db221bd76b74/viewbinding-4.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/3b0dbbe22c1a11d6e48ea3ea67f5a3b9/support-v4-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/84bf0dc2e7bf9f6b842d90ea1fe4e31a/support-fragment-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/3ca12a1ccfae5a70c2c97e35d5928f9a/support-core-utils-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/84de9443c17ff2b1e5bf82cc19bdbb11/animated-vector-drawable-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/2ebdfde0cf3db7931cec75154c8541b8/support-vector-drawable-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/97a94fe9e4eec4c55ac021b706f86504/support-media-compat-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/2e736ae05624257ccd12679058194115/support-core-ui-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/4edea205850a183aaf0a48694571249f/support-compat-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/35a6b1b8ce4c8bd21efd0223ea63db2e/runtime-1.0.3/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.3/7d7f60c4783872861222166f6164215f8951c7b1/common-1.0.3.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.1.3/bde0667d7414c16ed62d3cfe993cff7f9d732373/constraint-layout-solver-1.1.3.jar
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/incremental/debug-mergeNativeLibs/zip-cache
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/merged_native_libs/debug/out
+========================END==============================
+
+> Task :app:processDebugResources
+========================START==============================
+taskName:processDebugResources
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/aar_metadata_check/debug
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/00adceb951e0a9b90a30451ccc676cd6/com.android.databinding.library.baseAdapters
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/367f1c1219aa8db8683a52257b9d5bce/com.android.databinding.library
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/19ca9ba4bdc5a661480c99a8fb245639/android.support.multidex
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/c54e3628212018080b4d2899079968c8/android.support.v7.appcompat
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/f2b140fe24b1d803acea3d62cbbb361a/android.support.constraint
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/ac53d6ad495620ffd2ca1f213d1c30de/android.viewbinding
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/48c493dd6d14e8ac581dbd3bcc7489a7/android.support.v4
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/b008b564788309105dd5808dc8c071d0/android.support.fragment
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/afb9dc9f29dd915a3cd7e73b5132b640/android.support.coreutils
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/4d68246b96dcdf8543976e14a218a3f9/android.support.graphics.drawable.animated
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/c4a7cde2a99e2a4c812f132c7796891e/android.support.graphics.drawable
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/65311d882978d1ba24b509c5e9bb7430/android.support.mediacompat
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/292f8d7c2e278a5f625d5c76c18f808b/android.support.coreui
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/8e536216e4f8b2da0cc25c684962009f/android.support.compat
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/e5a659c34f7e8ea0bda9b5487a2d6f22/android.arch.lifecycle
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/83675ff0b5bc45b2048d4f3a31958ed2/com.android.databinding.library.baseAdapters-r.txt
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/0bc733a13cc7762ab1cb5ee1090b8d45/com.android.databinding.library-r.txt
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/6ca23662c72e3e05fc8a29fd68e22711/android.support.multidex-r.txt
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/6e6e7a85c98feea397723ace4de4e000/android.support.v7.appcompat-r.txt
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/5ea9083875ca96e1449761e779704a49/android.support.constraint-r.txt
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/030bfa7af465aac6b185e89a8b485f65/android.viewbinding-r.txt
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/e8b422bdc4b817e228fda19b644e245e/android.support.v4-r.txt
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/c64ebc5228a872ea29a18ab4c04a16a8/android.support.fragment-r.txt
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/baf9c701348fc83555b804e629663fdd/android.support.coreutils-r.txt
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/d40d2ff5fd9e113afaec74505a81fbc5/android.support.graphics.drawable.animated-r.txt
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/a3e22ecd98ba5f476c062994350510af/android.support.graphics.drawable-r.txt
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/e5e7f824e7673dfacf9b65b23f4d0cf4/android.support.mediacompat-r.txt
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/af0e2de925c04cdf4bc11dedd855172b/android.support.coreui-r.txt
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/24f89a3d1496648c9bb33479c47e3f65/android.support.compat-r.txt
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/dd9ba1b6ce19e9bd6cbade991f4df651/android.arch.lifecycle-r.txt
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/res/merged/debug
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/packaged_manifests/debug
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/merged_manifests/debug
+input:/Users/dingbaosheng/Library/Android/sdk/platforms/android-29/android.jar
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/incremental/processDebugResources
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/legacy_multidex_aapt_derived_proguard_rules/debug/manifest_keep.txt
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/processed_res/debug/out
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/runtime_symbol_list/debug/R.txt
+========================END==============================
+
+> Task :app:compileDebugJavaWithJavac
+========================START==============================
+taskName:compileDebugJavaWithJavac
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/libs/java-json.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/401d4cb96bd0afc9d5c03cd5d7669d7d/adapters-4.1.0-api.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/0acb21824142e901de44bc5224578497/library-4.1.0-api.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/4.1.0/2697e7689bbde7051db61cb6baeaf307975090db/baseLibrary-4.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/e0418b946ba7bd155e04844b332f4054/multidex-1.0.2-api.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/368685391dfdbe6d76bc39fc64e0734f/viewbinding-4.1.0-api.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/60cd53dd576f737d0ef784685bc75601/appcompat-v7-26.1.0-api.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/82e72bdbe47d8767166a9e525906204d/support-v4-26.1.0-api.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/0966b2a9c75b96a3b8b85e1b3cb1e0d8/support-fragment-26.1.0-api.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/3462dd894d0d3bd24c639b3641b586bb/support-core-utils-26.1.0-api.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/4f59afc221adcf92253add5ee3450231/animated-vector-drawable-26.1.0-api.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/cb264bd33477f7845295f3ee71f47ff4/support-vector-drawable-26.1.0-api.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/61931a00801a05d48c910229a4afa72d/support-media-compat-26.1.0-api.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/662e794f47959503a0b0b029bbb393f1/support-core-ui-26.1.0-api.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/2f10fa6d3c9c106761aa3af3c74d3b12/support-compat-26.1.0-api.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/127c3f25e9b0d68d34ee2e5c2d219387/runtime-1.0.3-api.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.3/7d7f60c4783872861222166f6164215f8951c7b1/common-1.0.3.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/d0df8fc1a0ce58ff47bca0a0dc30b473/constraint-layout-1.1.3-api.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.1.3/bde0667d7414c16ed62d3cfe993cff7f9d732373/constraint-layout-solver-1.1.3.jar
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/src/main/java/com/gradle/task/demo/MainActivity.java
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/generated/source/buildConfig/debug/com/gradle/task/demo/BuildConfig.java
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/generated/aidl_source_output_dir/debug/out/com/gradle/task/demo/IHelloAidlInterface.java
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/generated/data_binding_trigger/debug/com/gradle/task/demo/DataBindingTriggerClass.java
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-compiler/4.1.0/e3e4da8a3af1daddf2af919dd48598371973cbe2/databinding-compiler-4.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-compiler-common/4.1.0/ce7160dc1ad2cb4144d24da6b81a4bc97ec5c78b/databinding-compiler-common-4.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/4.1.0/e0c4fa410ea245a70a9dbd140a164d50b10e55fe/databinding-common-4.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.3.72/916d54b9eb6442b615e6f1488978f551c0674720/kotlin-stdlib-jdk8-1.3.72.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.google.auto/auto-common/0.10/c8f153ebe04a17183480ab4016098055fb474364/auto-common-0.10.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4/4.5.3/f35db7e4b2446e4174ba6a73db7bd6b3e6bb5da1/antlr4-4.5.3.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.googlecode.juniversalchardet/juniversalchardet/1.0.3/cd49678784c46aa8789c060538e0154013bb421b/juniversalchardet-1.0.3.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/28.1-jre/b0e91dcb6a44ffb6221b5027e12a5cb34b841145/guava-28.1-jre.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.squareup/javapoet/1.10.0/712c178d35185d8261295913c9f2a7d6867a6007/javapoet-1.10.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.tools.build.jetifier/jetifier-core/1.0.0-beta09/c98ee0e5579aed97e17f605a89b101115a2f5a61/jetifier-core-1.0.0-beta09.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.5/f645ed69d595b24d4cf8b3fbb64cc505bede8829/gson-2.8.5.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.1/dd6dda9da676a54c5b36ca2806ff95ee017d8738/jaxb-runtime-2.3.1.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/27.1.0/c5e76d6e7078808655107373703dda7c58fec517/annotations-27.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.72/3adfc2f4ea4243e01204be8081fe63bde6b12815/kotlin-stdlib-jdk7-1.3.72.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.72/8032138f12c0180bc4e51fe139d4c52b46db6109/kotlin-stdlib-1.3.72.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/2.8.1/eb2e8ab75598548cc8acf9a1ca227e480e01881e/checker-qual-2.8.1.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.3.2/d1a0c5032570e0f64be6b4d9c90cdeb103129029/error_prone_annotations-2.3.2.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.3/ba035118bc8bac37d7eff77700720999acd9986d/j2objc-annotations-1.3.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.18/f7aa683ea79dc6681ee9fb95756c999acbb62f5d/animal-sniffer-annotations-1.18.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.3.1/8531ad5ac454cc2deb9d4d32c40c4d7451939b5d/jaxb-api-2.3.1.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.3.1/a09d2c48d3285f206fafbffe0e50619284e92126/txw2-2.3.1.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/3.0.7/c197c86ceec7318b1284bffb49b54226ca774003/istack-commons-runtime-3.0.7.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.jvnet.staxex/stax-ex/1.8/8cc35f73da321c29973191f2cf143d29d26a1df7/stax-ex-1.8.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.sun.xml.fastinfoset/FastInfoset/1.2.15/bb7b7ec0379982b97c62cd17465cb6d9155f68e8/FastInfoset-1.2.15.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/javax.activation/javax.activation-api/1.2.0/85262acf3ca9816f9537ca47d5adeabaead7cb16/javax.activation-api-1.2.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.72/6ca8bee3d88957eaaaef077c41c908c9940492d8/kotlin-stdlib-common-1.3.72.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar
+input:/Users/dingbaosheng/Library/Android/sdk/platforms/android-29/android.jar
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/data_binding_base_class_log_artifact/debug/out
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/data_binding_dependency_artifacts/debug
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/data_binding_layout_info_type_merge/debug/out
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/annotation_processor_list/debug/annotationProcessors.json
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/generated/ap_generated_sources/debug/out
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/javac/debug/classes
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/data_binding_artifact/debug/out
+========================END==============================
+
+> Task :app:compileDebugSources
+========================START==============================
+taskName:compileDebugSources
+=========================================================
+========================END==============================
+
+> Task :app:mergeDebugJavaResource
+========================START==============================
+taskName:mergeDebugJavaResource
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/libs/java-json.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/98e3253de348d08123bed0ff074a2239/adapters-4.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/9003ebe2e185458af8ba680fbf2862a6/library-4.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/4.1.0/2697e7689bbde7051db61cb6baeaf307975090db/baseLibrary-4.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/293534efc17d104cfb6d889c36c76d43/multidex-1.0.2/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/0687e09995e12f3da0cda49c9283bcd8/appcompat-v7-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/5be6d260096f3bcffc16fcde0ceec99a/constraint-layout-1.1.3/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/0ba68018452eb558aea6db221bd76b74/viewbinding-4.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/3b0dbbe22c1a11d6e48ea3ea67f5a3b9/support-v4-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/84bf0dc2e7bf9f6b842d90ea1fe4e31a/support-fragment-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/3ca12a1ccfae5a70c2c97e35d5928f9a/support-core-utils-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/84de9443c17ff2b1e5bf82cc19bdbb11/animated-vector-drawable-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/2ebdfde0cf3db7931cec75154c8541b8/support-vector-drawable-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/97a94fe9e4eec4c55ac021b706f86504/support-media-compat-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/2e736ae05624257ccd12679058194115/support-core-ui-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/4edea205850a183aaf0a48694571249f/support-compat-26.1.0/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/35a6b1b8ce4c8bd21efd0223ea63db2e/runtime-1.0.3/jars/classes.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.3/7d7f60c4783872861222166f6164215f8951c7b1/common-1.0.3.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.1.3/bde0667d7414c16ed62d3cfe993cff7f9d732373/constraint-layout-solver-1.1.3.jar
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/java_res/debug/out/debug-resources.txt
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/java_res/debug/out/main-resources.txt
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/merged_java_res/debug/out.jar
+========================END==============================
+
+> Task :app:dexBuilderDebug
+========================START==============================
+taskName:dexBuilderDebug
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/javac/debug/classes
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/external_libs_dex_archive_with_artifact_transforms/debug/out
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/external_libs_dex_archive/debug/out
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/mixed_scope_dex_archive/debug/out
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/project_dex_archive/debug/out
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/sub_project_dex_archive/debug/out
+========================END==============================
+
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+========================START==============================
+taskName:stripDebugDebugSymbols
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/merged_native_libs/debug/out
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/stripped_native_libs/debug/out
+========================END==============================
+
+> Task :app:multiDexListDebug
+========================START==============================
+taskName:multiDexListDebug
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/legacy_multidex_aapt_derived_proguard_rules/debug/manifest_keep.txt
+input:/Users/dingbaosheng/Library/Android/sdk/platforms/android-29/android.jar
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/libs/java-json.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/e753d908e931c0bda43103ee5d33a199/adapters-4.1.0-runtime.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/49b08600b59083b52c21fa9c62546d76/library-4.1.0-runtime.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/4.1.0/2697e7689bbde7051db61cb6baeaf307975090db/baseLibrary-4.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/7be85d7d74c3bfb8c416048bfe1666cf/multidex-1.0.2-runtime.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/a041d77a65169482e0143dcef2637fed/appcompat-v7-26.1.0-runtime.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/c294aa45dcf6f3b09f0f6eadab23218f/constraint-layout-1.1.3-runtime.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/bbc098c97359d736b3c01e1644df0935/viewbinding-4.1.0-runtime.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/bab6c56453606579bfce320c9a4cbea5/support-v4-26.1.0-runtime.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/a95223929a91c91942e71037e3229967/support-fragment-26.1.0-runtime.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/9d53f0420f463f42005b0d10475d8264/support-core-utils-26.1.0-runtime.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/84eb53f7281a4dac73ae0bb0ee30af5b/animated-vector-drawable-26.1.0-runtime.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/69903869cd9dbf6bc0d3eccd701d682e/support-vector-drawable-26.1.0-runtime.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/56875e04c061e806c2257d18e8075e06/support-media-compat-26.1.0-runtime.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/79a71604b3c889f703d19edc86c05d1e/support-core-ui-26.1.0-runtime.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/58303097a320f2e8882981872eb794b7/support-compat-26.1.0-runtime.jar
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/b2a243c0e5368bc6098b59f517a5c7a3/runtime-1.0.3-runtime.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.3/7d7f60c4783872861222166f6164215f8951c7b1/common-1.0.3.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar
+input:/Users/dingbaosheng/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.1.3/bde0667d7414c16ed62d3cfe993cff7f9d732373/constraint-layout-solver-1.1.3.jar
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/javac/debug/classes
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/maindexlist.txt
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/legacy_multidex_main_dex_list/debug/mainDexList.txt
+========================END==============================
+
+> Task :app:mergeDexDebug
+========================START==============================
+taskName:mergeDexDebug
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/project_dex_archive/debug/out
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/mixed_scope_dex_archive/debug/out
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/d2b5bfb2af4b4a41c47b8d4ec9fe7e78/java-json
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/b7cb74a5f1d209aaa78714dbeee67e46/adapters-4.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/2ccc08799a5504a54b01b7c70570f13a/library-4.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/5157e41a268c27dfd69ac6d11d40c26d/baseLibrary-4.1.0
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/ac41c85a5a06d97913bf2d81b4b7edcd/multidex-1.0.2-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/c17da92d9940f21c71ba9e35e461be81/appcompat-v7-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/3aa38f6784862db22700f12a0911c066/constraint-layout-1.1.3-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/cdbbff5b91cc93f80422c6a5b5021af1/viewbinding-4.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/1cb2bacd62e75f25b97405d60303225d/support-v4-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/5202b3a748f81223565cfda9840b2fd5/support-fragment-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/3e7374366c9639d355906f799111df58/support-core-utils-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/71d7abad486d07dcba6ecee13e93c2c8/animated-vector-drawable-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/a7a573f03e2460004ad2a5d6dea779a4/support-vector-drawable-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/ad02379c43b633a76e6968783ac78de1/support-media-compat-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/1ee76a857244ac24399f0b59d3654698/support-core-ui-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/b1287764d0454fdbf09468b61506d9ea/support-compat-26.1.0-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/3734b228d79b894fff5bae3b86adc865/runtime-1.0.3-runtime
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/69f2922a9c3350ca14cddebd3871bf7e/common-1.0.3
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/ab5de816b9e83fafbdfa98f8f884c414/common-1.0.0
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/8755135407a5981e1887093593fde306/support-annotations-26.1.0
+input:/Users/dingbaosheng/.gradle/caches/transforms-2/files-2.1/573484a9fb5bb402e8a5fb678ffc2fbb/constraint-layout-solver-1.1.3
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/duplicate_classes_check/debug
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/legacy_multidex_main_dex_list/debug/mainDexList.txt
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/dex/debug/mergeDexDebug
+========================END==============================
+
+> Task :app:packageDebug
+========================START==============================
+taskName:packageDebug
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/compressed_assets/debug/out
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/dex/debug/mergeDexDebug
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/merged_java_res/debug/out.jar
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/stripped_native_libs/debug/out
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/packaged_manifests/debug
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/processed_res/debug/out
+input:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/validate_signing_config/debug
+input:/Users/dingbaosheng/.android/debug.keystore
+=========================================================
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/outputs/apk/debug/output-metadata.json
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/intermediates/incremental/packageDebug/tmp
+output:/Users/dingbaosheng/work/projects/demo/AndroidGradleTaskDemo/app/build/outputs/apk/debug
+========================END==============================
+
+> Task :app:assembleDebug
+========================START==============================
+taskName:assembleDebug
+=========================================================
+========================END==============================
+
+BUILD SUCCESSFUL in 12s
+32 actionable tasks: 31 executed, 1 up-to-date

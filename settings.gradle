@@ -1,3 +1,4 @@
+rootProject.name="AndroidGradleDemo"
 gradle.ext {
     compileSdkVersion = 29
     buildToolsVersion = "29.0.2"
@@ -8,4 +9,3 @@ gradle.ext {
 
 //include ':module-a'
 include ':app'
-include ':buildsrc'
